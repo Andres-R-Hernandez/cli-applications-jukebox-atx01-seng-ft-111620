@@ -40,6 +40,8 @@ def run(songs)
       list(songs)
     elsif input == "play"
       play(songs)
+    else
+      puts "Invalid input, please try again"
     end
   end
   exit_jukebox
