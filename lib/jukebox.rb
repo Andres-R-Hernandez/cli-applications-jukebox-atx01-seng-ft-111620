@@ -17,8 +17,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   if input.class == Integer
-    puts "Playing #{songs[input - 1]}"
-    p input
+    puts "Playing #{songs[input]}"
   elsif input.class == String && songs.any?(input)
     puts "Playing #{input}"
   else
