@@ -29,15 +29,19 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   puts "Please enter a command:"
 
   input = gets.strip
 
   if input == "help"
+    help
   elsif input == "list"
+    list(songs)
   elsif input == "play"
+    play(songs)
   elsif input == "exit"
+    exit_jukebox
   end
 
 
