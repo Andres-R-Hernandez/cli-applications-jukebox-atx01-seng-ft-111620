@@ -12,19 +12,7 @@ def list(songs)
     puts "#{index+1}. #{song}"
   end
 end
-=begin
-songs = [
-  "Phoenix - 1901",
-  "Tokyo Police Club - Wait Up",
-  "Sufjan Stevens - Too Much",
-  "The Naked and the Famous - Young Blood",
-  "(Far From) Home - Tiga",
-  "The Cults - Abducted",
-  "Phoenix - Consolation Prizes",
-  "Harry Chapman - Cats in the Cradle",
-  "Amos Lee - Keep It Loose, Keep It Tight"
-]
-=end
+
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
@@ -36,7 +24,7 @@ def play(songs)
     puts "Invalid input, please try again"
   end
 end
-#play(songs)
+
 def exit_jukebox
   puts "Goodbye"
 end
