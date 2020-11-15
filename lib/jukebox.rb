@@ -30,7 +30,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   if input.class == Integer && input < songs.size
-    puts "Playing #{songs[input.to_i - 1]}"
+    puts "Playing #{songs[input - 1]}"
   elsif input.class == String && songs.any?(input)
     puts "Playing #{input}"
   else
