@@ -17,7 +17,11 @@ def help
         - exit : exits this program"
 end
 
-def list
+def list(songs)
+  count = 0
+  while songs[count]
+    puts "#{count}. #{songs[count]}"
+    count += 1
 end
 
 def play
