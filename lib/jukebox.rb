@@ -18,6 +18,7 @@ def play(songs)
   input = gets.strip
   if input.class == Integer
     puts "Playing #{songs[input - 1]}"
+    p input
   elsif input.class == String && songs.any?(input)
     puts "Playing #{input}"
   else
