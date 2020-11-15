@@ -18,13 +18,13 @@ def help
 end
 
 def list(songs)
-  count = 0
-  while songs[count]
-    puts "#{count}. #{songs[count]}"
-    count += 1
+  songs.each_with_index do |song,index|
+    puts "#{index+1}. #{song}"
+  end
 end
 
 def play
+
 end
 
 def exit_jukebox
